@@ -5,6 +5,31 @@ namespace GenericCollectionsProject {
     class Program {
         static void Main(string[] args) {
 
+
+            List<int> frames = new List<int>(10);
+
+            Random rnd = new Random();// used to generate random number and can be used many times
+
+
+            for (var idx = 0; idx < 10; idx++) {// load 10 scores
+                var score = rnd.Next(0, 31);
+                frames.Add(score);
+            }
+
+            rnd.Next(0, 30);
+
+            int total = 0;
+            foreach (var frame in frames) {
+                total += frame;
+            }
+            Console.WriteLine($"Game score is {total}");
+
+
+
+    
+
+
+            /*
             List<string> names = new List<string>()
 
             var integers = new List<int>();
@@ -20,7 +45,7 @@ namespace GenericCollectionsProject {
 
             foreach(var i in integers) {
                 Console.WriteLine($"i= {i}");
-            }
+            }*/
         } 
     }
 }
