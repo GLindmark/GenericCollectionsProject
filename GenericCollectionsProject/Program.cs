@@ -19,7 +19,7 @@ namespace GenericCollectionsProject {
             rnd.Next(0, 30);
 
             int total = 0;
-            foreach (var frame in frames) {
+            foreach (var frame in frames) {// sum the scores
                 total += frame;
             }
             Console.WriteLine($"Game score is {total}");
