@@ -5,6 +5,17 @@ namespace GenericCollectionsProject {
     class Program {
         static void Main(string[] args) {
 
+            var customers = new Customers();
+            customers.LoadCustomers();//create customer list
+            customers.PrintCustomers();
+
+
+
+
+        }
+
+        static void Run() { 
+
 
             List<int> frames = new List<int>(10);
 
